@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absen Kuliah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Absen Kuliah</h1>
+    </header>
+    <main>
+        <section id="form-absen">
+            <h2>Formulir Absen</h2>
+            <form id="absen-form">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+                
+                <label for="nim">NIM:</label>
+                <input type="text" id="nim" name="nim" required>
+                
+                <button type="submit">Absen</button>
+            </form>
+        </section>
+
+        <section id="daftar-absen">
+            <h2>Daftar Kehadiran</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>NIM</th>
+                        <th>Waktu Absen</th>
+                    </tr>
+                </thead>
+                <tbody id="tabel-absen">
+                    <!-- Data absen akan muncul di sini -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Sistem Absen Kuliah</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
